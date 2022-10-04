@@ -83,6 +83,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#video {
+  box-shadow: 1px 1px 12px #ddd;
+  width: 100%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
