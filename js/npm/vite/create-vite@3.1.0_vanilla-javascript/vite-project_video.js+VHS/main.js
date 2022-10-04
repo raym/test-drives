@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import videojs from 'video.js'
+import '@videojs/http-streaming'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -22,8 +23,10 @@ document.querySelector('#app').innerHTML = `
       poster="//vjs.zencdn.net/v/oceans.png"
       data-setup='{}'
     >
-      <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-      <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+      <source
+        src="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"
+        type="application/x-mpegURL"
+      >
       <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a
         web browser that
