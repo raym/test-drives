@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "video.js": "^7.20.3",
     "vite": "^3.1.0"
   }
 }
