@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "version": "0.0.0",
+  "description": "Communicate to Digital Ocean Spaces using JavaScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "upload:textfile": "node ./scripts/put-object-hello-world-file.js",
+    "download": "node ./scripts/download-a-file.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.183.0",
+    "dotenv": "^16.0.3"
+  }
+}
